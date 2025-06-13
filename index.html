@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>بطاقة تعارف يا سكره</title>
+<style>
+body {
+    font-family:'Tahoma', sans-serif;
+    background: #FFD1E9;
+    color: #ff1493;
+    margin: 20px;
+    padding: 20px;
+    border: 5px solid #ff69b4;
+    border-radius: 15px;
+    width: 400px;
+    margin: 50px auto;
+    box-shadow: 0 0 20px #ff69b4;
+    font-size: 1.2em;
+}
+
+h1 {
+    text-align: center;
+    color: #ff1493;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    text-shadow: 0 0 10px #ff69b4;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #ff69b4;
+    font-size: 1.4em;
+}
+
+input, select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: #ffe4f1;
+    color: #ff1493;
+    font-size: 1.3em;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+    transform: scale(1.5);
+}
+
+input[type="submit"] {
+    background: #ff69b4;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 1.3em;
+}
+
+input[type="submit"]:hover {
+    background: #ff1493;
+}
+</style>
+</head>
+<body>
+    <h1>بطاقة تعارف يا سكره</h1>
+    <form action="https://formspree.io/f/xpwrdbpj" method="POST">
+        <label>اسمك إيه؟</label>
+        <input type="text" name="name" required>
+
+        <label>عندك كام سنة؟</label>
+        <input type="number" name="age" required>
+
+        <label>ست ولا راجل؟</label><br>
+        <input type="radio" name="gender" value="ست" required> ست
+        <input type="radio" name="gender" value="رجل" required> راجل
+
+        <label>متجوزة ولا أرملة ولا مطلقة ولا آنسة؟</label>
+        <select name="marital">
+            <option value="">اختاري</option>
+            <option value="متجوزة">متجوزة</option>
+            <option value="أرملة">أرملة</option>
+            <option value="مطلقة">مطلقة</option>
+            <option value="آنسة">آنسة</option>
+        </select>
+
+        <label>آخر مرة عملتي علاقة إمتى؟</label>
+        <input type="date" name="lastRelation">
+
+        <label>اسم حسابك على الفيسبوك عشان يوصلك الأحدث 🫣</label>
+        <input type="text" name="facebook">
+
+        <label>شخص تتمني وجوده معاكي؟</label>
+        <input type="text" name="someone">
+
+        <input type="submit" value="سجل">
+    </form>
+</body>
+</html>
